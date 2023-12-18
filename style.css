@@ -1,7 +1,23 @@
+html {
+    background-color: #272a2d;
+    scroll-behavior: smooth;
+}
+
+a:link,a:visited {
+    color: #EBF0F5;
+    text-decoration: none;
+}
+
+a:hover,a:active {
+    text-decoration: underline;
+    text-decoration-color:#EBF0F5;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 0.5px;
+}
+
 h1 {
     color: #EBF0F5;
-    font-family: "Special Elite", cursive;
-    text-align: center
+    text-align: center;
 }
 
 h2 {
@@ -15,15 +31,66 @@ button {
     background-color: #EBF0F5;
     color: #272a2d;
     height: auto;
-    width: 10%
+    width: 10%;
 }
 
-button:hover {
-  background-color: #DCE6F0;
-  box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.4)
+/* */
+
+nav {
+    align-items: center;
+    color: #EBF0F5;
+    display: flex;
+    font-family: 'M PLUS Code Latin', monospace;
+    font-size: 3vh;
+    font-style: normal;
+    font-weight: 100;
+    font-stretch: 100%;
+    font-display: swap;
+    height: 15vh;
+    justify-content: space-around;
 }
 
-.imgicons {
-    width: 80%;
-    height: auto
+.desktop-ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+.mobile-hamburger {
+    display: inline-flex;
+    position: relative;
+}
+
+.hamburger-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 24px;
+}
+
+.hamburger-logo span {
+    background-color: #EBF0F5;
+    height: 1px;
+    width: 100%;
+}
+
+.hamburger-ul {
+    background-color: #272a2d;
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: fit-content;
+}
+
+.hamburger-ul.open {
+    max-height:300px;
 }

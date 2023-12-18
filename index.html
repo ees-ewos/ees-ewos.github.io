@@ -4,31 +4,52 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="/images/wdzy_lightring.jpg" type="image/jpg" />
+<!--<link rel="icon" href="" type="image/jpg" />-->
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="/script.js"></script>
-    <title>Home | ZZZOIE</title>
+    <link href="mediaqueries.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <title>Home | ZOIE</title>
 
-    <!-- google fonts -->
+    <!-- google fonts -->  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Playfair+Display:wght@500&family=Special+Elite&display=swap">
-    
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-color:#272a2d">
-    <h1>ZZZOIE</h1>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="nav-home">
+            <a href="">Home</a>
+        </div>
+        <div>
+            <ul class="desktop-ul">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="mobile-nav">
+        <div class="nav-home">
+            <a href="">Home</a>
+        </div>
+        <div class="mobile-hamburger">
+            <div class="hamburger-logo" onclick="toggleBurger()">
+                <span></span><span></span><span></span>
+            </div>
+            <div>
+                <ul class="hamburger-ul">
+                    <li><a href="#about" onclick="toggleBurger()">About</a></li>
+                    <li><a href="#projects" onclick="toggleBurger()">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1>ZOIE TSANG</h1>
     <div>
-        <h2>Bookmarks</h2>
-        <form style="display: inline" action="https://outlook.office.com/mail/" method="get">
-            <button type="submit" formtarget="_blank"><img class="imgicons" src="https://outlook.office.com/mail/favicon.ico"></button>
-        </form>
-        <form style="display: inline" action="https://concord.fireflycloud.net/planner/week/" method="get">
-            <button type="submit" formtarget="_blank"><img class="imgicons" src="https://fireflylearning.com/favicon.ico"></button>
-        </form>
-        <form style="display: inline" action="https://www.kerboodle.com/" method="get">
-            <button type="submit" formtarget="_blank"><img class="imgicons" src="https://www.kerboodle.com/images/favicon.ico"></button>
-        </form>
+
     </div>
 </body>
 
