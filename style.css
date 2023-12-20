@@ -20,34 +20,9 @@ a:hover,a:active {
 
 /* */
 
-body>*:not(h1){
-    animation-delay: 0.5s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-name: fadeIn;
-    animation-timing-function: ease-in-out;
-    opacity: 0;
-}
-
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1;}
-}
-
-h1 {
-    animation-delay: 0s;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-name: shake;
-    animation-timing-function: ease-in-out;
-    color: #EBF0F5;
-    display: block;
-    font-family: 'M PLUS Code Latin', monospace;
-    font-style: normal;
-    font-weight: 300;
-    font-stretch: 125%;
-    text-align: center;
 }
 
 @keyframes shake {
@@ -63,7 +38,85 @@ h1 {
     45% { transform: translate(1px, 1px) rotate(1deg); }
     50% { transform: translate(0, 0) rotate(0deg); }
     100% { opacity: 1; }
+}
+
+/* */
+
+#to-top {
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    background-color: #272a2d;
+    border-color:#EBF0F5;
+    border-radius: 10px;
+    border-style: ridge;
+    border-width: 1px;
+    bottom: 5vh;
+    color: #EBF0F5;
+    cursor: pointer;
+    display: none;
+    font-family: 'M PLUS Code Latin', monospace;
+    font-size: 2vh;
+    font-stretch: 105%;
+    font-weight: 300; 
+    outline: none;
+    position: fixed;
+    padding: 12px 15px;
+    right: 5em;
+    z-index: 100; 
   }
+  
+#to-top:hover {
+    background-color: #2f3136;
+    border-color: #E4E8ED;
+    color: #EBF0F5;
+}
+
+/* */
+
+body>*:not(#intro, #to-top){
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+}
+
+h1 {
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+    color: #EBF0F5;
+    display: block;
+    font-family: 'M PLUS Code Latin', monospace;
+    font-size: 40px;
+    font-weight: 300;
+    font-stretch: 125%;
+    text-align: center;
+}
+
+
+#intro-text {
+    animation-delay: 0s;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    align-items: center;
+    color: #EBF0F5;
+    display: flex;
+    font-family: 'M PLUS Code Latin', monospace;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 100;
+    font-stretch: 120%;
+    justify-content: space-around;
+}
 
 /* */
 
@@ -100,8 +153,8 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 24px;
-    width: 24px;
+    height: 3vh;
+    width: 3vh;
 }
 
 .hamburger-logo span {
